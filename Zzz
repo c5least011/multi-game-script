@@ -12,7 +12,7 @@ local plr = Players.LocalPlayer --shutup FUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUC
 local StarterGui = game:GetService("StarterGui") --shutup FUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCK
 
 local success, whitelist = pcall(function()
-    return loadstring(game:HttpGet("https://raw.githubusercontent.com/c5least011/Vip/refs/heads/main/whitelist"))() --shutup FUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCK
+    return loadstring(game:HttpGet("https://raw.githubusercontent.com/c5least011/Vip/refs/heads/main/Gu7gj9Redriih-TghiiTyuo"))() --shutup FUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCK
 end) --FUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCK
 --[[
 Shutup skidder
