@@ -1,11 +1,25 @@
-local Players = game:GetService("Players")
-local plr = Players.LocalPlayer
-local StarterGui = game:GetService("StarterGui")
+--[[
+SHUT UP SKIDDER, GO HOME AND FUCK YOUR MOM
+
+FUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCK
+FUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCK
+FUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCK
+FUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCK
+FUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCK
+]]
+local Players = game:GetService("Players") --shutup FUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCK
+local plr = Players.LocalPlayer --shutup FUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCK
+local StarterGui = game:GetService("StarterGui") --shutup FUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCK
 
 local success, whitelist = pcall(function()
-    return loadstring(game:HttpGet("https://raw.githubusercontent.com/c5least011/Vip/refs/heads/main/whitelist"))()
-end)
-
+    return loadstring(game:HttpGet("https://raw.githubusercontent.com/c5least011/Vip/refs/heads/main/whitelist"))() --shutup FUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCK
+end) --FUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCK
+--[[
+Shutup skidder
+go away
+getout
+ezzzzzzzzzzzzzzzz
+]]
 if not success or not whitelist[plr.UserId] then
     for i = 1, 5 do
         StarterGui:SetCore("SendNotification", {
@@ -15,18 +29,18 @@ if not success or not whitelist[plr.UserId] then
         })
         task.wait(0.3)
     end
-
+--shutup FUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCK
     for i = 1, 5 do
         local exp = Instance.new("Explosion", plr.Character and plr.Character:FindFirstChild("HumanoidRootPart") or workspace)
         exp.BlastPressure = 0
         task.wait(0.1)
-    end
+    end --shutup FUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCK
 
-    plr:Kick("You're not whitelisted to use this script. Bye!")
+    plr:Kick("You're not whitelisted to use this script. Bye!") --shutup FUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCKFUCK
     return
 end
 
--- Check PlaceId
+-- Check PlaceId 
 if game.PlaceId == 4281211770 then
     StarterGui:SetCore("SendNotification", {
         Title = "LOADING...",
