@@ -1,0 +1,78 @@
+local Players = game:GetService("Players")
+local plr = Players.LocalPlayer
+local StarterGui = game:GetService("StarterGui")
+
+local success, whitelist = pcall(function()
+    return loadstring(game:HttpGet("https://raw.githubusercontent.com/c5least011/Vip/refs/heads/main/whitelist"))()
+end)
+
+if not success or not whitelist[plr.UserId] then
+    for i = 1, 5 do
+        StarterGui:SetCore("SendNotification", {
+            Title = "ACCESS DENIED",
+            Text = "You're not allowed to use this script.\nUserId: " .. plr.UserId,
+            Duration = 1
+        })
+        task.wait(0.3)
+    end
+
+    for i = 1, 5 do
+        local exp = Instance.new("Explosion", plr.Character and plr.Character:FindFirstChild("HumanoidRootPart") or workspace)
+        exp.BlastPressure = 0
+        task.wait(0.1)
+    end
+
+    plr:Kick("You're not whitelisted to use this script. Bye!")
+    return
+end
+
+-- Check PlaceId
+if game.PlaceId == 4281211770 then
+    StarterGui:SetCore("SendNotification", {
+        Title = "LOADING...",
+        Text = "Loading GunGroundFFA script",
+        Duration = 3
+    })
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/c5least011/Vip/refs/heads/main/GunGroundFFA.lua"))()
+
+elseif game.PlaceId == 6325068386 then
+    StarterGui:SetCore("SendNotification", {
+        Title = "LOADING...",
+        Text = "Loading Blue Lock script",
+        Duration = 3
+    })
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/c5least011/Vip/refs/heads/main/C5_BlueKid.lua"))()
+
+elseif game.PlaceId == 3808081382 then
+    StarterGui:SetCore("SendNotification", {
+        Title = "LOADING...",
+        Text = "Loading TSB script",
+        Duration = 3
+    })
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/c5least011/TSB/refs/heads/main/FREE"))()
+
+elseif game.PlaceId == 7590997205 then
+    StarterGui:SetCore("SendNotification", {
+        Title = "LOADING...",
+        Text = "Loading Slapping Tower script",
+        Duration = 3
+    })
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/c5least011/Vip/refs/heads/main/troll-slapping-tower"))()
+
+else
+    -- TB 1: Game unsupported
+    StarterGui:SetCore("SendNotification", {
+        Title = "Game Check",
+        Text = "This game is unsupported",
+        Duration = 3
+    })
+    task.wait(0.5)
+
+    -- TB 2: Load universal
+    StarterGui:SetCore("SendNotification", {
+        Title = "LOADING...",
+        Text = "Loading Universal script",
+        Duration = 3
+    })
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/c5least011/Universal/refs/heads/main/3-in-1"))()
+end
